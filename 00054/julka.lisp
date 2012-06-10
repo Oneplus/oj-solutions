@@ -1,0 +1,6 @@
+(dotimes (i 10)
+  (setq m (read))
+  (setq n (read))
+  (princ (format nil "~D~%" (floor (/ (+ m n) 2))))
+  (princ (format nil "~D~%" (floor (/ (- m n) 2))))
+  )
