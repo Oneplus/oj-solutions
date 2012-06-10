@@ -1,0 +1,5 @@
+(setq n (read))
+(dotimes (i n)
+  (setq x (1- (read)))
+  (setq str (string (read)))
+  (princ (format nil "~D ~A~%" (1+ i) (delete-if (lambda (ch) t) str :start x :count 1))))
